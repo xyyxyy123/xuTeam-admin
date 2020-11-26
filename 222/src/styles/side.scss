@@ -1,0 +1,281 @@
+.navside-container .svg-icon{
+    margin:0 10px;
+}
+.hideSidebar{
+   .el-menu-item{
+    padding-left: 10px !important;
+   }
+   .el-tooltip{
+    padding-left: 10px !important;
+   }
+   .el-submenu .el-menu-item{
+    display: none;
+   }
+//    .el-submenu__title{
+//     display: none;
+//    }
+}
+
+.hideSidebar .el-submenu>.el-submenu__title,
+.hideSidebar .submenu-title-noDrodown{
+    padding-left: 10px !important;
+}
+// .el-submenu__title{
+//     // border-bottom: 1px solid rgb(145, 141, 141);
+// }
+.el-submenu>.el-submenu__title{
+    padding-left: 20px !important;
+}
+//colleaps
+.hideSidebar .el-menu-item>span,
+.hideSidebar .submenu-title-noDrodown span,
+.hideSidebar .el-submenu>.el-submenu__title>span{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+.hideSidebar .nest-menu .el-submenu__title{
+    text-align: initial !important;
+    padding-left: 20px !important;
+    span{
+        height: auto;
+        width: auto;
+        visibility: visible;
+        display: inline;
+    }
+    .el-submenu__icon-arrow{
+        display: block !important;
+    }
+}
+.hideSidebar .menu-wrapper>.el-menu-item,
+.hideSidebar .submenu-title-noDrodown,
+.hideSidebar .menu-wrapper>.el-menu-item .el-submenu__title
+{
+    text-align: center;
+}
+.hideSidebar .el-menu-item .el-submenu__icon-arrow,
+.hideSidebar .el-submenu .el-submenu__title .el-submenu__icon-arrow{
+    display: none;
+}
+//提示框 hover
+.el-menu--vertical{
+    .el-menu-item{
+        background-color:#21232a;
+    }
+    .el-menu-item:hover{
+        background-color: #363942;
+    }
+    .el-menu-item.is-active{
+        color: green !important;
+        font-weight: 700;
+    }
+}
+.el-menu--popup {
+    background-color:#21232a !important;
+    border-radius: 0px !important;
+    margin: 0 !important;
+    padding: 5px !important;
+}
+.hideSidebar .submenu-title-noDrodown{
+    position: relative;
+    span{
+        transition: opacity 0.28s cubic-bezier(.55,0,.1,1);
+        opacity: 0;
+    }
+    &:hover{
+        display: block;
+        border-radius: 3px;
+        z-index: 1000;
+        width: 140px;
+        height: 50px;
+        visibility: visible;
+        position: absolute;
+        right: -145px;
+        text-align: left;
+        text-indent: 20px;
+        top:0;
+        // opacity: 1;
+    }
+}
+//menu hover
+//第二级标题
+// .navside-container .el-submenu>.el-submenu__title{
+//     height: 50px;
+//     line-height: 50px;
+//     display: flex;
+// }
+// .navside-container{
+//    .el-submenu>.el-submenu__title{
+//     height: 50px;
+//     line-height: 50px;
+//     display: flex;
+//     // background-color: #1f233e;
+//     &visited,
+//     &focus,
+//     &:hover{background-color: #1f233e;}
+//     &:active{
+//         color:#fff !important;
+//         background-color:red;
+//     }
+//     &.is-active{
+//         color:#fff !important;
+//         background-color:red;
+//     }
+//    }
+// }
+// .navside-container .el-submenu>.el-submenu__title:active{
+//     // height: 50px;
+//     // line-height: 50px;
+//     // display: flex;
+//     background-color: red;
+//     color:#fff;
+// }
+// .navside-container .el-submenu>.el-submenu__title{
+//     height: 50px;
+//     line-height: 50px;
+//     display: flex;
+//       &visited,
+//       &focus,
+//       &:hover{background-color: #1f233e !important;color:#9BA7CE!important; }
+//     //   &:active {
+//     //     background-color:#409EFF;
+//     //   }
+//       &.is-active{
+//         background-color:#409EFF;
+//         color:#9BA7CE!important;
+//       }
+// }
+// .navside-container .el-submenu__title:active {
+//     color: #ffffff !important;
+// }
+// .navside-container .el-submenu__title{
+//   height: 50px;
+//   line-height: 50px;
+//   display: flex;
+// //   color:#ffffff !important;
+// //   background-color: #1f233e; 
+//     &visited,
+//     &:focus{
+//       color:#ffffff !important;
+//     }
+//     &:hover,
+//     // &:active {
+//     // //   background-color:#409EFF;
+//     //   color:#ffffff !important;
+//     // }
+//     &.is-active{
+//     //   background-color:#409EFF;
+//       color:#ffffff !important;
+//     }
+// }
+// //第二级
+// .navside-container .el-submenu{
+//     background-color: #1f233e;
+//     &visited,
+//     &focus,
+//     &:hover,
+//     &:active {
+//       background-color:#409EFF;
+//       color:#ffffff !important;
+//     }
+//     &.is-active{
+//       background-color:#409EFF;
+//       color:#ffffff !important;
+//     }
+// }
+// //第二级子级
+// .navside-container .el-submenu .el-menu-item {
+//     min-width: 200px !important;
+//     background-color: #1f233e;
+//     text-align: center;
+//     color: #fff;
+// }
+// //第二级子级
+// .navside-container .el-submenu .el-menu-item{
+//     color:#9BA7CE;
+//     &visited,
+//     &focus,
+//     // &:hover,
+//     &:active {
+//       background-color:#409EFF;
+//     }
+//     &.is-active{
+//         background-color:#409EFF;
+//         color:#ffffff !important;
+//     }
+// }
+// // //第一级
+// .navside-container .el-menu-item{
+//     height: 50px;
+//     line-height: 50px;
+//     &visited,
+//     &focus,
+//     &:hover{
+//       background-color: #1f233e; 
+//     }
+//     &:active {
+//       background-color:#409EFF;
+//     }
+//     &.is-active{
+//       background-color:#409EFF;
+//       color: #fff !important;
+//     }
+// }
+.navside-container .el-submenu__title{
+    display: flex;
+    color:#fff;
+      &visited,
+      &focus,
+      &:hover,
+      &:active {
+        background-color: #363942;
+      }
+      &.is-active{
+        background-color: #222325;
+      }
+  }
+  .navside-container .el-submenu{
+    color:#fff;
+      &visited,
+      &focus,
+      &:hover,
+      &:active {
+        background-color: #363942;
+      }
+      &.is-active{
+        background-color: #3f4755;
+      }
+  }
+  .navside-container .el-submenu .el-menu-item {
+      min-width: 180px !important;
+      background:#21232a;
+  }
+  .navside-container .el-submenu .el-menu-item{
+      color:#fff;
+      &visited,
+      &focus,
+      &:hover,
+      &:active {
+        background-color:rgb(45, 43, 57);
+      }
+      &.is-active{
+        background-color:rgb(17, 14, 38);
+        color:green !important;
+        font-weight: 700;
+      }
+  }
+  .navside-container .el-menu-item{
+      color:#fff;
+      &visited,
+      &focus,
+      &:hover,
+      &:active {
+        background-color: #363942;
+      }
+      &.is-active{
+        background-color: #3f4755;
+        color: #fff !important;
+      }
+  }
